@@ -44,6 +44,7 @@ Works out of the box with:
 | Skill Package | Location | Focus Area & Capabilities |
 | :--- | :--- | :--- |
 | **Master Motion Director** | [`SKILL.md`](./SKILL.md) | Central intelligence coordinator, natural language intent parser, and framework quick-start router. |
+| **`understand-and-create-animation`** | [`skills/understand-and-create-animation`](./skills/understand-and-create-animation) | **Flagship AI Motion Creator**: Translates any natural language animation prompt into production-ready 60fps code across React, Next.js, Vue, Svelte, and Vanilla JS. Includes companion CLI generator. |
 | **`gsap-core`** | [`skills/gsap-core`](./skills/gsap-core) | Core tweens (`to`, `from`, `fromTo`, `set`), easing catalog, 2D grid staggers, `gsap.matchMedia()`, and accessibility. |
 | **`gsap-scrolltrigger`** | [`skills/gsap-scrolltrigger`](./skills/gsap-scrolltrigger) | Scroll-linked animations, pinning, scrubbing, `ScrollTrigger.batch()` for card grids, multi-speed parallax, and progress bars. |
 | **`gsap-production-patterns`** | [`skills/gsap-production-patterns`](./skills/gsap-production-patterns) | **Agency-grade battle-tested patterns**: Hero sections, kinetic typography, magnetic cursor/buttons, 3D card tilt, loading screens, and marquees. |

@@ -196,6 +196,7 @@ For in-depth recipes, consult the specialized sub-skills in this repository:
 
 | Skill Directory | Focus Area |
 | :--- | :--- |
+| **`skills/understand-and-create-animation`** | Flagship AI animation creator: translates any prompt into complete, production-ready 60fps code across all frameworks. |
 | **`skills/gsap-core`** | Core engine API, tweens, easings catalog, matchMedia, staggers, and intent engine. |
 | **`skills/gsap-scrolltrigger`** | Pinning, scrub, ScrollTrigger.batch, multi-speed parallax, progress bars, refresh handling. |
 | **`skills/gsap-production-patterns`** | Hero entrance sequences, kinetic text reveals, magnetic buttons, 3D card tilt, loading screens. |
