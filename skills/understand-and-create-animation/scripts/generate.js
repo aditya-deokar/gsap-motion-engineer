@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 /**
- * CLI Generator for understand-and-create-animation
- * Inspired by bruzethegreat GSAP Master MCP Server
+ * Production Code Generator for GSAP Motion Engineer Suite
+ * Synthesizes surgical, 60fps animations across React, Next.js, Vue, Svelte, and Vanilla JS
  */
 
 const args = process.argv.slice(2);

@@ -18,7 +18,7 @@ Apply this skill when implementing advanced creative animations using GSAP plugi
 - **CustomEase**: Creating bespoke cubic-bezier or SVG-defined easing curves.
 - **GSDevTools**: Visual scrubber UI for fine-tuning timeline timings.
 
-> 🎉 **Licensing Note**: All former "Club GreenSock" plugins (SplitText, MorphSVG, DrawSVG, Flip, Inertia, ScrollSmoother) are **100% free** under the standard GSAP package thanks to Webflow! No private registry tokens needed.
+> 📦 **Plugin Availability**: All advanced GSAP plugins (SplitText, MorphSVG, DrawSVG, Flip, Inertia, ScrollSmoother, CustomEase) are fully included and accessible via standard `npm install gsap`. No private registry tokens or paid subscriptions are required.
 
 ---
 

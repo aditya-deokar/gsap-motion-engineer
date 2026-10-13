@@ -109,6 +109,36 @@ export function initHeroAnimation() {
 
 ## ✍️ Pattern 2: Kinetic Typography Master
 
+### Masked Line Reveal (Editorial Baseline Rise)
+The signature Awwwards headline reveal: text emerges upward from an invisible horizon line:
+```javascript
+export function animateMaskedLines(selector) {
+  const element = document.querySelector(selector);
+  if (!element) return;
+
+  const split = new SplitText(element, {
+    type: "lines,words",
+    linesClass: "line-mask-wrapper",
+  });
+
+  split.lines.forEach((line) => {
+    line.style.overflow = "hidden";
+  });
+
+  gsap.from(split.words, {
+    yPercent: 110,
+    duration: 1.3,
+    stagger: 0.04,
+    ease: "power4.out",
+    scrollTrigger: {
+      trigger: element,
+      start: "top 85%",
+      toggleActions: "play none none reverse",
+    },
+  });
+}
+```
+
 ### Character Reveal with 3D Perspective
 ```javascript
 import gsap from "gsap";

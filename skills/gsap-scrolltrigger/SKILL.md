@@ -216,9 +216,45 @@ gsap.to(".box", {
 
 ---
 
+## 🌊 Awwwards-Standard Momentum Scroll (Lenis + ScrollTrigger Sync)
+
+Pairing ScrollTrigger with momentum smooth-scrolling eliminates jittery pins and choppy scrub timelines. Synchronize the render loop to prevent frame drops:
+
+```bash
+npm install lenis
+```
+```javascript
+import Lenis from "lenis";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+// 1. Initialize Lenis with weighted momentum
+const lenis = new Lenis({
+  duration: 1.2,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  smoothWheel: true,
+});
+
+// 2. Synchronize Lenis scroll events with ScrollTrigger
+lenis.on("scroll", ScrollTrigger.update);
+
+// 3. Drive Lenis through GSAP ticker for a unified 60fps/120fps render loop
+gsap.ticker.add((time) => {
+  lenis.raf(time * 1000);
+});
+
+// 4. Disable GSAP lagSmoothing so ticker stays locked to scroll position
+gsap.ticker.lagSmoothing(0);
+```
+
+---
+
 ## 📱 Mobile Safari Address Bar Jumping Defense
 
 On iOS and Android Safari/Chrome, the address bar retracts when scrolling, causing `100vh` jumps.
 1. Use `ScrollTrigger.normalizeScroll(true)` to prevent address bar jitter.
 2. Avoid CSS `100vh` on pinned containers; use `100svh` or `100dvh`.
 3. Set `anticipatePin: 1` on pinned sections to avoid slight visible delay before pinning kicks in.
+

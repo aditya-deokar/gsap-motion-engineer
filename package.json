@@ -2,7 +2,7 @@
   "name": "@aditya-deokar/gsap-motion-engineer",
   "version": "1.1.0",
   "description": "The definitive GSAP animation & motion engineering skill suite for AI coding agents and frontend developers.",
-  "main": "SKILL.md",
+  "main": "skills/gsap-motion-engineer/SKILL.md",
   "bin": {
     "gsap-motion": "./skills/understand-and-create-animation/scripts/generate.js"
   },
