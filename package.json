@@ -1,0 +1,28 @@
+{
+  "name": "@aditya-deokar/gsap-motion-engineer",
+  "version": "1.0.0",
+  "description": "The definitive GSAP animation & motion engineering skill suite for AI coding agents and developers.",
+  "main": "SKILL.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aditya-deokar/gsap-motion-engineer.git"
+  },
+  "keywords": [
+    "agent-skills",
+    "skills.sh",
+    "gsap",
+    "animation",
+    "motion",
+    "scrolltrigger",
+    "splittext",
+    "webflow",
+    "react-gsap",
+    "creative-development"
+  ],
+  "author": "Aditya Deokar <adityadeokar80@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aditya-deokar/gsap-motion-engineer/issues"
+  },
+  "homepage": "https://github.com/aditya-deokar/gsap-motion-engineer#readme"
+}
